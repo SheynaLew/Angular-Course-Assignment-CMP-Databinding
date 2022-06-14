@@ -13,6 +13,7 @@ export class GameControlComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Tried and failed so followed along and made notes
   onStartGame() {
     this.interval = setInterval(() => {
       this.intervalFired.emit(this.lastNumber + 1);
@@ -20,7 +21,8 @@ export class GameControlComponent implements OnInit {
     },1000);
   }
 
+  // Tried on my own
   onStopGame() {
-
+    clearInterval(this.interval);
   }
 }
