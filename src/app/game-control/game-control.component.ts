@@ -25,4 +25,12 @@ export class GameControlComponent implements OnInit {
   onStopGame() {
     clearInterval(this.interval);
   }
+
+  // A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers)
+    // a function with an if statement which is called in the onStartGame function and generates an Even Component in the app component?
+  createOdd() {
+    if (this.lastNumber / 2 % 0) {
+
+    }
+  }
 }
